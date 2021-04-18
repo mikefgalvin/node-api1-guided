@@ -2,7 +2,7 @@ const shortid = require('shortid')
 
 let dogs = [
   { id: shortid.generate(), name: 'Captain', weight: 25, adopter_id: null },
-  { id: shortid.generate(), name: 'Doggo', weight: 13, adopter_id: null },
+  { id: shortid.generate(), name: 'Doggo', weight: 13, adopter_id: null }
 ]
 
 module.exports = {
