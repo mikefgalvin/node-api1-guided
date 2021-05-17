@@ -59,6 +59,18 @@ server.post("/api/dogs", (req, res) => {
     }
 
 })
+//async 
+// server.post("/api/dogs", (req, res) => {
+//     try {
+//         const newDog = await Dog.create(req.body)
+//         res.status(201).json(newDog)
+//     } catch (err) {
+//         res.status(500).json({
+//             message: 'error posting new dog',
+//             error: err.message,
+//         })
+//     }
+// })
 
 // [PUT] /api/dogs/:id (U of CRUD, update dog with :id using JSON payload)
 server.put("/api/dogs/:id", async (req, res) => {
